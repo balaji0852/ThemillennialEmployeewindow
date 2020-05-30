@@ -1,0 +1,112 @@
+
+#authorid,#category,#date{
+	border-radius: 20px;
+    font-size: 12pt;
+    padding:5px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+#processedo{
+  border-radius: 20px;
+    font-size: 12pt;
+    padding:5px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    padding-right: 14px;
+    border-radius: 15px;
+}
+#date{
+	border-radius: 20px;
+    font-size: 12pt;
+    padding:3px;
+    font-family: sans-serif;
+    border-radius: 15px;
+    padding-right: 0px;
+}
+#headline{
+	border-radius: 20px;
+    font-size: 12pt;
+    padding:5px;
+    font-family: sans-serif;
+    border-radius: 15px;
+}
+textarea{
+border-radius: 15px;
+}
+#uploadnews{
+    font-size: 10pt;
+    padding:5px;
+    font-family: sans-serif;
+    padding-left: 8px;
+    padding-right:8px;
+    border-radius: 15px;
+    background-color: white;
+    border-color: black;
+}
+#elogout{
+    font-size: 10pt;
+    padding:5px;
+    font-family: sans-serif;
+    padding-left: 8px;
+    padding-right:8px;
+    border-radius: 8px;
+    background-color: white;
+    border-color:black;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+#score{
+	font-size: 30pt;
+	border-radius: 15px;
+  background-color: #17A6D5;
+   border-color:black;
+}
+#enotification,#ename,#fields,#update{
+	font-size: 14pt;
+	padding:7px;
+	padding-left:90px;
+	padding-right: 90px;
+	border-radius: 15px;
+  background-color: #17A6D5;
+  border-color:black;
+}
+
+.left {
+
+  left: 0;
+  height: 100%;
+  width:50%;
+  background-color: #17A6D5;
+  border-radius: 15px;
+}
+body{
+	background-color: #17A6D5;
+  background-size: 100% 100%;
+}
+
+.right {
+  right: 0;
+  width:50%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    <title> Millenial login</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+</head>
+<body>
+<div id="inline" align="center"  >
+    <div id="login" align="center">
+        <br>
+        <br>
+        <br>
+        <p class="loginheading">Employee login</p>
+        <br>
+        <br>
+        <div class="inputs" align="center">
+            <form>
+                <label class="userid"><b >User-id  :</b></label>
+                <input type="text" id="userid" name="uid" placeholder="User-id"><br><br>
+                <label ><b>Password :</b></label>
+                <input  type="password"id="password" name="pwd"placeholder="Password">
+                <br><br><br><br>
+                <Button id="loginbtn">Login</Button>
+                <br>
+                <p id="notification"></p>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script>var firebaseConfig = 
+{
+    apiKey: "AIzaSyAxu03EljyfdxsYmapiD47DNeqVymelND0",
+    authDomain: "themillennialenewspaper-c24d3.firebaseapp.com",
+    databaseURL: "https://themillennialenewspaper-c24d3.firebaseio.com",
+    projectId: "themillennialenewspaper-c24d3",
+    storageBucket: "themillennialenewspaper-c24d3.appspot.com",
+    messagingSenderId: "682858959281",
+    appId: "1:682858959281:web:cab6d325761e2b79cfed90",
+    measurementId: "G-BG32NFD0S8"
+};
+firebase.initializeApp(firebaseConfig);</script>
+<script type="text/javascript" src="index.js"></script>
+
+<br>
+<br>
+<br>
+
+<p id="Copyright" align="center"><Mark>Copyright © 2020 The Millenial E-newspaper Inc. All rights reserved.</Mark></p>
+</body>
+</html>

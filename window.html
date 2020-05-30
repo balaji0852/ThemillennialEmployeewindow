@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>administrator window.</title>
+    <link rel="stylesheet" href="windowstyles.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+
+<script>var firebaseConfig = 
+{
+    apiKey: "AIzaSyAxu03EljyfdxsYmapiD47DNeqVymelND0",
+    authDomain: "themillennialenewspaper-c24d3.firebaseapp.com",
+    databaseURL: "https://themillennialenewspaper-c24d3.firebaseio.com",
+    projectId: "themillennialenewspaper-c24d3",
+    storageBucket: "themillennialenewspaper-c24d3.appspot.com",
+    messagingSenderId: "682858959281",
+    appId: "1:682858959281:web:cab6d325761e2b79cfed90",
+    measurementId: "G-BG32NFD0S8"
+};
+firebase.initializeApp(firebaseConfig);</script>
+<script type="text/javascript" src="window.js"></script>
+
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+   <div id="data">
+    <form>
+      <h1>Journal entry form</h1>
+    <label><b>Headline :</b></label>
+    <input type="text" id="headline"placeholder="Headline for your news" size="50">
+    <br>
+    <br>
+    <label><b>Image - News :</b></label>
+    <input type="file" id="image">
+    <br>
+    <br>
+    <label><b>Select category :</b></label>
+    <select id="category" name="category">
+    <option value="Sports">Sports</option>
+    <option value="Auto News">Auto News</option>
+    <option value="Novel Corona">Novel Corona</option>
+    <option value="Health">Health</option>
+    <option value="Fashion">Fashion</option>
+    <option value="Technology">Technology</option>
+    <option value="Politics">Politics</option>
+    <option value="Environment">Environment</option>
+    <option value="First page">First page</option>
+    <option value="Talks in Bangalore">Talks in Bangalore</option>
+    <option value="Education">Education</option>
+    <option value="Entertainment">Entertainment</option>
+
+
+    </select>
+      <br>
+    <br>
+    <label><b>Publishing  Date :</b></label>
+    <input type="Date" id="date">
+    <br>
+    <br>
+    <label><b>Author-id(userid):</b></label>
+    <select id="authorid" name="authorid">
+    <option value="TMEmployee01">TMEmployee01</option>
+    <option value="TMEmployee02">TMEmployee02</option>
+        <option value="TMEmployee03">TMEmployee03</option>
+        <option value="TMEmployee04">TMEmployee04</option> 
+       <option value="TMTEmployee01">TMTEmployee01</option> 
+
+        </select>
+        <p><mark>Author-id is your Employee-id for time being</mark></p>
+        <label><b>Processed officer:</b></label>
+    <select id="processedo" name="authorid">
+    <option value="TMEmployee04">Sujith Prasanna</option>
+    <option value="TMEmployee03">Sneha Jaiswal</option>
+        <option value="TMEmployee02">Vidhya Shree</option>
+        <option value="TMEmployee01">Balaji Rajkumar</option> 
+        <option value="TMTEmployee01">Shreyash Reddy</option> 
+
+        </select>
+        <br>
+        <label><b>Text-News:</b></label>
+        <textarea id="textnews" placeholder="Enter the Textual news here."
+        rows="15" cols="80"></textarea>
+        <br>
+        <p  id="uploaded"><mark>Caution: Please press the upload button only once.</mark></p>
+
+        <Button id="uploadnews" align="center">Upload news</Button>
+   
+        </form>
+        <script type="text/javascript" src="dbass.js"></script>
+        </div>
+    
+  </div>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+   <h2>Employee dashboard</h2>
+   <div id="ename">
+      <label> Employee Name :</label> <p id="Ename">No Name</p>
+    </div> 
+    <p id="update">No Recent uploads.</p>
+    <div id="fields">
+      <label>News categories assigned:</label> <p id="field">your category</p>
+    </div>
+    <div id="score">
+    <p id="escore" align="center">0</p>
+     </div>
+     <div id="enotification">
+    <p>No Notification.</p>
+    </div>
+    <br>
+  <button id="elogout">Logout</button>
+  </div>
+
+</div>
+<script type="text/javascript" src="journalI.js"></script>
+<script type="text/javascript" src="notify.js"></script>
+
+
+</body>
+</html> 
