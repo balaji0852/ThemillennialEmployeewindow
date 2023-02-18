@@ -19,10 +19,10 @@ var finalscore;
 var docref;
 var lastup;
 var secondaryAppConfig = {
-    apiKey: "AIzaSyAxu03EljyfdxsYmapiD47DNeqVymelND0",
-    authDomain: "themillennialenewspaper-c24d3.firebaseapp.com",
-    databaseURL: "https://themillennialenewspaper-c24d3.firebaseio.com",
-    storageBucket: "gs://themillennialenewspaper-c24d3.appspot.com"
+    apiKey: "x",
+    authDomain: "u",
+    databaseURL: "b",
+    storageBucket: "e"
    };
 firebase.initializeApp(secondaryAppConfig, "secondary");
 
